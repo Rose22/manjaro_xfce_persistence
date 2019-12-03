@@ -1,5 +1,5 @@
 # Description
-This is a set of scripts that can turn a LiveUSB Manjaro (XFCE edition) session, into a persistent session, without doing any modifications to the usb stick. No altering of partitions, nothing special is needed.
+This is a set of scripts that can turn a LiveUSB Manjaro (XFCE edition) session, into a persistent session, without doing any modifications to the usb stick or to your installed operating system. No altering of partitions, nothing special is needed.
 
 It does this by saving the configuration/settings of your live session into a directory in your chosen location, and when you next start up your liveUSB session, running the initialization script will then restore those settings, and you can continue using the liveUSB session as you left it.
 
