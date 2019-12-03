@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Save LiveUSB configuration and shut down
+Comment=Init
+Exec=./scripts/liveusb_save_shutdown.sh
+Terminal=true
+Type=Application

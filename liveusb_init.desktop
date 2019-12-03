@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=LiveUSB Initialization
+Comment=Init
+Exec=./scripts/liveusb_init.sh
+Terminal=true
+Type=Application

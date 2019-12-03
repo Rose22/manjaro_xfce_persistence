@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Save LiveUSB configuration
+Comment=Init
+Exec=./scripts/liveusb_save.sh
+Terminal=true
+Type=Application
