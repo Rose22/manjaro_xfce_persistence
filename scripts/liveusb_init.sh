@@ -21,10 +21,14 @@ WIFI_SSID="placeholder"
 MIRROR_COUNTRIES="United_States"
 BLUETOOTH_ID="00:00:00:00:00:00 (placeholder)"
 
-ENABLE_WIFI=TRUE
 INSTALL_PACKAGES=TRUE
-RESTORE_BLUETOOTH=FALSE
+ENABLE_WIFI=FALSE
 LAUNCH_PROGRAMS=FALSE
+
+# When using bluetooth autoconnect, make sure to install the bluez-utils package.
+# Install it, then save your persistent session. This way, it'll be available to the script next time you run it,
+# since it saves all installed packages into the persistence directory.
+RESTORE_BLUETOOTH=FALSE
 # -------------------------------------------
 
 # CD into the directory the script is in
@@ -39,7 +43,7 @@ killall pamac-tray
 clear
 
 if [ $RESTORE_BLUETOOTH ]; then
-	sudo pacman -U --noconfirm packages/bluez* 1>/dev/null
+	sudo pacman -U --noconfirm packages/bluez* 1>/dev/null	
 	sudo bluetooth on
 	echo "Connecting Bluetooth device.. Please enable pairing mode on your device."
 	sleep 8
